@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 236, 219);
+}
+header{
+    color: red;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+.h3{
+    color: rgb(119, 53, 53);
+    font-weight: 100;
+    font-style: oblique;
+}
+
+.navbar {
+    background-color:#1c4d69;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    position: fixed;
+    width: 100%;
+    font-size: medium;
+    font-style: italic;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.navlinks a {
+    background-color:  rgb(243, 236, 219);
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: inline;
+    
+}
+
+.navlinks a:hover {
+    background-color: red;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    margin: 20px auto;
+    width: 70%;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info .info div {
+    width: 45%;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    background-color: #ccc;
+}
+form input:hover, textarea:hover {
+background-color: white;
+}
+
+form button {
+    padding: 8px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1c4d69;
+}
+
+footer {
+    background-color: #1c4d69;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}

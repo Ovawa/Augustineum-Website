@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: rgb(243, 236, 219);
 }
-header{
+h2{
     color: red;
     font-style: italic;
     text-align: center;
@@ -17,11 +17,11 @@ header{
     font-style: oblique;
 }
 
-.navbar {
+header {
     background-color:#1c4d69;
-    padding: 8px;
+    padding: 5px 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #ddd;
     position: fixed;
@@ -30,13 +30,29 @@ header{
     font-style: italic;
 }
 
-.navbar img {
+.logo {
     height: 50px;
 }
+nav ul {
+    list-style: none;
+    display: flex;
+}
 
-.navlinks a {
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: #131111;
+    text-decoration: none;
+    padding: 1px 10px;
+    background-color: #708090;
+    border-radius: 5px;
+}
+
+/* .navlinks a {
     background-color:  rgb(243, 236, 219);
-    margin: 0 15px;
+    margin: 3 10px;
     text-decoration: none;
     color: #000;
     font-weight: bold;
@@ -45,9 +61,9 @@ header{
     border-radius: 5px;
     display: inline;
     
-}
+} */
 
-.navlinks a:hover {
+nav ul li a:hover {
     background-color: red;
 }
 

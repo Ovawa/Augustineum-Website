@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.google.com/css2? family=Roberto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body background="schoolImage.jpg">
+    <nav>
+        <ul class="sidebar">
+            <li onclick= hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill=black><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">academics</a></li>
+            <li><a href="#">gallery</a></li>
+            <li><a href="#">news and events</a></li>
+            <li><a href="Alumni.html">alumni</a></li>
+            <li><a href="#">our team</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><img src="logo.jpg" alt="" style="width: 50px; height: 50px;"></a></li>
+            <li class="hideOnMobile"><a href="#">home</a></li>
+            <li class="hideOnMobile"><a href="#">about us</a></li>
+            <li class="hideOnMobile"><a href="#">academics</a></li>
+            <li class="hideOnMobile"><a href="#">gallery</a></li>
+            <li class="hideOnMobile"><a href="#">news and events</a></li>
+            <li class="hideOnMobile"><a href="#">alumni</a></li>
+            <li class="hideOnMobile"><a href="#">our team</a></li>
+            <li class="hideOnMobile"><a href="#">contact us</a></li>
+            <li class="menuItem" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <div class="boxes">
+        <div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum eveniet nemo aliquid itaque, quos sint necessitatibus cum velit officia tempore, incidunt labore enim laudantium earum exercitationem mollitia ratione aliquam suscipit?
+            </p>
+
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quo adipisci quaerat praesentium cumque nobis placeat ex sequi recusandae, aliquam sint nisi magnam, alias nostrum voluptas debitis tempora optio distinctio?
+            </p>
+
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi cumque dignissimos doloremque, similique sapiente itaque nemo quaerat excepturi fuga, a fugiat saepe dolor aliquid autem unde accusantium veritatis facere repudiandae.
+            </p>
+
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nesciunt ipsa dolorem rerum perspiciatis. Dolores ex repellendus quisquam debitis ducimus corporis beatae id reiciendis labore? Vitae dolorum quo omnis cupiditate.
+            </p>
+
+        </div>
+
+    </div>
+<footer>
+        <div class="row">
+            <div class="colunm">
+                <h3 >find Us</h3>
+                <p>Khomasdal erf 2343 </p>
+                <p>Independence Avenue</p>
+                <p>Windhoek, Namibia</p>
+            </div>
+            <div class="colunm">
+                <h3>contact Us</h3>
+                <p>+264 81 267 6789</p>
+                <p class="email">ngaiuane@gmail.com</p>
+            </div>
+            <div class="colunm">
+            <div class="socialIcons">
+                <h3>Follow Us</h3>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    
+                
+            </div>
+            </div>
+            <div class="colunm"><img src="logo.jpg" alt="" style="width: 50px; height: 50px;"></div>
+            
+    
+        </div>
+    
+    
+</footer>
+
+    <script>
+        function showSidebar(){
+             const sidebar = document.querySelector('.sidebar')
+             sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+</body>
+</html>

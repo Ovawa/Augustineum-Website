@@ -1,127 +1,78 @@
 *{
-    margin: 0;
-    padding: 0;
-}
-body{
-    min-height: 100vh;
-   
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-nav{
-    background-color: whitesmoke;
-    box-shadow: 3px 3px 5px rgba(32, 29, 29, 0.947);
-}
-nav ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-nav li{
-    height: 50px;
+.profile-main-container {
+  padding-top: 150px;
+  background: linear-gradient(135deg, rgba(55, 95, 128, .85) 1%, rgba(81, 112, 170, .75) 30%), url(./image/aboutpage.jpg) 50% no-repeat fixed;
+  width: 100%;
+  height: auto;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.profile-secondary-container {
+  width: 85%;
+  margin: auto;
+}
+.motto{
+  margin: auto;
+  width: 60%;
+  padding: 10px
 }
 
-nav a{
-    height: 100%;
-    padding: 0 15px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: black;
+.motto h1 {
+  margin: 80px 10px 40px;
+  text-align: center;
+  color: #000; 
 }
-nav a:hover{
-    background-color: #d36868;
-}
-
-nav li:first-child{
-    margin-right: auto;
-}
-
-.sidebar{
-    position: fixed;
-    top: 0;
-    right:0;
-    height: 100vh;
-    width: 150px;
-    z-index: 999;
-    background-color: #f0f0f047;
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.sidebar li{
-    width: 100vh;
-}
-
-.sidebar a{
-    width: 100vh;
-}
-
-footer{
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-    background-color: whitesmoke;  
-    padding: 100px 0 30px 30;
-    margin: 0;
-    font-size: 13px;
-    line-height: 15px;
-    box-shadow: 3px 3px 5px rgba(32, 29, 29, 0.947);
-}
-
-.row{
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.colunm{
-    display: flex;
-    padding: 10px;
-    text-align: center;
-    margin: 0 auto;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-i:hover{
-    background-color: #d36868;
-}
-
-.boxes{
-    display: flex;
-    
-    flex-direction: column ;
+.motto-content p{
+  text-align: center;
 }
 
 
+.mission-vision-values-container {
+  width: 100%;
+  padding: 5% 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.mission-vision-values-card {
+  width: 270px;
+  box-shadow: 0 50px 100px -20px rgba(50, 50, 93, .25), 0 30px 60px -30px rgba(0, 0, 0, .3);
+  background-color: #fff;
+  border-radius: 10px;
+}
+.mission-vision-values-card .mission-vision-value-content {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px 10px 0 0;
+}
 
-@media(min-width:800px){
-    .menuItem{
-        display: none;
-}
+.mission-vision-value-mini-content {
+  width: 100px;
+  margin: auto;
+  text-align: center;
 }
 
-@media(max-width: 800px){
-    .hideOnMobile{
-        display: none;
-    }
-    
+.mission-vision-value-content img {
+  width: 45px;
+  height: 45px;
+  margin: 20px auto auto;
 }
-@media(max-width: 400px){
-    .sidebar{
-        width: 100%
-    }
+h1 {
+  font-weight: lighter;
+  font-size: 35p
+}
+.mission-vision-values-card p {
+  padding: 20px;
+  font-size: 18px;
+  color: grey;
+  text-align: left;
 }

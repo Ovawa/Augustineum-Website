@@ -130,3 +130,30 @@ form button:hover {
     display: block;
     text-decoration: none;
 }
+.main-gallery {
+    padding: 40px ;
+    text-align: center;
+    background-color: #f9f9f9;
+    
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 50px;
+    padding: 20px;
+    
+    margin: 20px;
+    justify-content: center;
+    
+}
+
+.gallery-grid img { 
+   height: 180px;
+  width: 120%;
+   border-radius: 10px;
+}
+
+.gallery-image:hover{
+    transform: scale(1.1); 
+}

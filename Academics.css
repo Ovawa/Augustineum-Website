@@ -140,7 +140,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-nav{
+/* nav{
     
     background-color: #e2dada;
     box-shadow: 3px 3px 5px rgba(32, 29, 29, 0.947);
@@ -180,5 +180,5 @@ nav ul li a img:hover{
 }
 nav li:first-child{
     margin-right: auto;
-}
+} */
 

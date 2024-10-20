@@ -43,16 +43,49 @@ h2{
     width: 80%;
 }
 
-form {
-    margin-top: 5px;
-    margin: 20px;
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
 }
 
-form label {
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box {
+    width: 48%;
+}
+
+.input-box label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
+    color: #333;
+    font-size: 14px;
 }
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
 
 form input, form textarea {
     width: 80%;

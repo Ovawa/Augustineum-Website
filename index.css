@@ -1,0 +1,250 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.container {
+    width: 90%; /* Adjust the width as per your preference */
+    margin: 0 auto; /* Centers the container */
+    max-width: 1200px; /* Limits the maximum width */
+}
+.content-wrapper {
+    display: flex;
+    justify-content: space-evenly; /* Places slideshow and sidebar apart */
+    align-items: flex-start;
+}
+.sidebar-academics {
+    width: 15%; /* Adjust the width of the sidebar */
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+.academic-image {
+    width: 100%; /* Adjust the image width to fit the sidebar */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.sidebar-academics h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.btn-academics {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgb(9, 9, 160);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-academics:hover {
+    background-color: #0053ba;
+}
+/* Header and Navbar */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #e2dada;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-section img {
+    height: 90px;
+    margin-right: 20px;
+    width: 100px;
+}
+
+.social-media-links a {
+    margin-left: 10px;
+    color: #761606;
+}
+
+.navbar {
+    background-color: rgb(9, 9, 160);
+    padding: 15px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right:0;
+    height: 100vh;
+    width: 150px;
+    z-index: 999;
+    background-color: #f0f0f047;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100vh;
+}
+
+.sidebar a{
+    width: 100vh;
+}
+/* Slideshow */
+.slideshow{
+justify-content:end;
+}
+
+.slideshow-container {
+    width: 80%;
+    height: 500px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.slideshow-container img {
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    align-items: center;
+}
+
+/* Welcome Section */
+.welcome-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.welcome-section h1,.sidebar-academics h1 {
+color: red;
+font-weight: 100;
+font-style: italic;
+font-family: cursive;
+font-weight: bolder;
+font-size: 30px;
+margin-bottom: 10px;
+}
+.welcome-section p,.sidebar-academics p{
+    font-family: cursive;
+    font-size: 15px; 
+    font-weight: 200;
+    color: #761606;
+    
+}
+.welcome-section img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+
+}
+.word-principal{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Core Values, Mission, Vision Section */
+.values-section {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    gap: 20px; /* Spacing between boxes */
+    height: 80vh; /* Takes 80% of the viewport height */
+}
+
+.values-box {
+    width: 250px; /* Width of each box */
+    height: 70vh;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black; /* Box border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text */
+    background-color: #f9f9f9; /* Light background */
+}
+
+.values-box h3 {
+    margin-bottom: 10px;
+}
+
+.values-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.values-box ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer Section */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #eeba2b;
+}
+
+.footer-box {
+    width: 30%;
+    text-align: center;
+}
+
+.footer-credits {
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+    font-size: 14px;
+}
+@media(min-width:800px){
+    .menuItem{
+        display: none;
+}
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%
+    }
+}

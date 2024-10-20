@@ -5,23 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="contactUs.css">
-    <link rel="stylesheet" href="Academics.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.google.com/css2? family=Roberto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+        <div class="top-header">
+            <div class="logo-section">
+                <img src="media/home-pictures/Coat of Arms.png" alt="Coat of Arms" class="small-logo">
+                <img src="media/home-pictures/newerlogo.png" alt="School Logo" class="main-logo">
+            </div>
+            <div class="social-media-links">
+                <a href="#">Tel:(061)  211318/9</a>
+                <a href="#">augustineum@gmail.com</a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class="sidebar">
+                <li onclick= hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="rgb(118, 6, 6)"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li ><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li ><a href="Academics.html">Academics</a></li>
+                    <li ><a href="Gallery.html">Gallery</a></li>
+                    <li ><a href="EventandNews.html">News &Events</a></li>
+                    <li ><a href="Alumni.html">Alumni</a></li>
+                    <li><a href="OurTeam.html">Our Team</a></li>
+                    <li ><a href="Contact Us.html">Contact Us</a></li>
+                   
+                </ul>
             <ul>
-                <li><img class="logo"src="media/logobg.png"></li>
-                <li ><a href="Home.html">Home</a></li>
-                <li><a href="About.html">About Us</a></li>
-                <li ><a href="Academics.html">Academics</a></li>
-                <li ><a href="Gallery.html">Gallery</a></li>
-                <li ><a href="EventandNews.html">News &Events</a></li>
-                <li ><a href="Alumni.html">Alumni</a></li>
-                <li><a href="OurTeam.html">Our Team</a></li>
-                <li ><a href="Contact Us.html">Contact Us</a></li>               
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="About.html">About Us</a></li>
+                <li class="hideOnMobile"><a href="Academics.html">Academics</a></li>
+                <li class="hideOnMobile"><a href="Gallery.html">Gallery</a></li>
+                <li class="hideOnMobile"><a href="EventandNews.html">News &Events</a></li>
+                <li class="hideOnMobile"><a href="Alumni.html">Alumni</a></li>
+                <li class="hideOnMobile"><a href="OurTeam.html">Our Team</a></li>
+                <li class="hideOnMobile"><a href="Contact Us.html">Contact Us</a></li>
+                <li class="menuItem" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="rgb(118, 6, 6)"s><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
     </header>
@@ -34,7 +59,7 @@
             <div class="address">
                 <h3>Enquiries</h3>
                 <p>Tel: (061) 211318/9</p>
-                <p>E-mail: <a href="#"><em>augustineum@gmail.com</em></a></p><br>
+                <p>E-mail: <a href="gmail.com"><em>augustineum@gmail.com</em></a></p><br>
                 <h3>Postal Address</h3>
                 <p>Private Bag 13227</p>
                 <p>WINDHOEK</p><br>
@@ -51,32 +76,36 @@
             </div>
         </div><br>
 
-        <fieldset>
-            <legend><h3 class="h3">Fill the form for more enquiries</h3></legend>
-            <form action="myform" method="post">
-                <fieldset>
-                <legend>User Details</legend>
-                <label for="firstname">FirstName*</label>
-                <input type="text" id="firstname" name="firstname" required> <br>
-            
-                <label for="lastname">LastName*</label>
-                <input type="text" id="lastname" name="lastname" required> <br>
-                
-                <label for="email">Email</label> <br>
-                <input type="email" id="email" name="email" required> <br>
-            </fieldset>
-        <fieldset>
-                <legend>Message</legend>
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject"> <br>
-                
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="4"></textarea><br>
-                
-                <button type="submit">Submit</button>
-            </fieldset>
+        <div class="contact-form">
+            <h1>Contact Us</h1>
+            <form action="#" method="post">
+                <div class="input-container">
+                    <div class="input-box">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="message">Leave us a message...</label>
+                    <textarea id="message" name="message" placeholder="Type your message here..." rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
             </form>
-        </fieldset>
+        </div>
         
     </div>
 </div>

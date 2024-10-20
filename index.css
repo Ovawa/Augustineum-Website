@@ -231,6 +231,25 @@ margin-bottom: 10px;
     background-color: #ddd;
     font-size: 14px;
 }
+  /* Button styles */
+  .popup-btn {
+    background-color: maroon;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  .popup-btn:hover {
+    background-color: black;
+  }
+  
+  /* Hide the popup by default */
+  #popup {
+    display: none;
+  }
 @media(min-width:800px){
     .menuItem{
         display: none;

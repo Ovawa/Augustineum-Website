@@ -12,17 +12,17 @@ body {
     
 }
 .container {
-    width: 90%; /* Adjust the width as per your preference */
-    margin: 0 auto; /* Centers the container */
-    max-width: 1200px; /* Limits the maximum width */
+    width: 90%; 
+    margin: 0 auto; 
+    max-width: 1200px;
 }
 .content-wrapper {
     display: flex;
-    justify-content: space-evenly; /* Places slideshow and sidebar apart */
+    justify-content: space-evenly; 
     align-items: flex-start;
 }
 .sidebar-academics {
-    width: 15%; /* Adjust the width of the sidebar */
+    width: 15%; 
     padding: 20px;
     background-color: #f3f3f3;
     border-radius: 10px;
@@ -31,7 +31,7 @@ body {
     margin-top: 20px;
 }
 .academic-image {
-    width: 100%; /* Adjust the image width to fit the sidebar */
+    width: 100%; 
     height: auto;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -180,23 +180,23 @@ margin-bottom: 10px;
 /* Core Values, Mission, Vision Section */
 .values-section {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
-    gap: 20px; /* Spacing between boxes */
-    height: 80vh; /* Takes 80% of the viewport height */
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    height: 80vh; 
 }
 
 .values-box {
-    width: 250px; /* Width of each box */
+    width: 250px; 
     height: 70vh;
     margin: 20px;
     padding: 20px;
-    border: 2px solid black; /* Box border */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    text-align: center; /* Center text */
-    background-color: #f9f9f9; /* Light background */
+    border: 2px solid black; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    background-color: #f9f9f9; 
 }
 
 .values-box h3 {

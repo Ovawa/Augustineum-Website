@@ -22,21 +22,21 @@
     left: 50%;
     transform: translateX(-50%);
 }
-img{
+/* img{
    width: 100%;
    height: 500px;
    margin-top: 20px;
    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
-}
+} */
 .intro{
     text-align: center;
-    font-size: 25px;
-    margin-top: 5px;
+    font-size: 20px;
+    margin-top: 10px;
     color:#333;
     font-weight: 600;
 }
 .application-box {
-    background-color:#e28d8d; 
+    background-color:lightgray; 
     border: 2px solid #580505;
     border-radius: 10px;
     padding: 20px;
@@ -53,11 +53,11 @@ img{
     color: #000;
 }
 .application-box h2 {
-    color: #333;
+    color: black;
 }
 
 .application-box p {
-    color: #555;
+    color: #181616;
     margin-top: 10px;
 }
 
@@ -84,22 +84,14 @@ img{
 .download-btn:hover {
     background-color: #dd4444;
 }
-.row{
+.row1{
     display: flex;
     justify-content: space-around;
    
 }
-footer{
-    background-color: #e2dada;
-}
-.footer-bottom {
-    margin-top: 10px;
-    font-size: 12px;
-    color: #000;
-    text-align: center;
-}
+
 .col{   
-    background-color: #e28d8d;
+    background-color: lightgray;
     border: 2px solid  #912828;
     padding: 20px;
     text-align: center;
@@ -114,7 +106,12 @@ footer{
     height: fit-content;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 250ms; 
- 
+}
+.col p{
+    color: #000;
+}
+.col h2{
+    color: #000;
 }
 .col:hover{
     transform: translateY(-10px);
@@ -125,60 +122,9 @@ h2{
 strong {
     text-decoration:underline;
 }
-#nb{
-    text-decoration: none;
-}
+
 h4{
     text-align: center;
     font-size: 2em;
     color: #333;
 }
-body{
-    background-color: whitesmoke;
-    min-height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-/* nav{
-    
-    background-color: #e2dada;
-    box-shadow: 3px 3px 5px rgba(32, 29, 29, 0.947);
-    width: 100%;
-    height: fit-content;
-}
-nav ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-nav li{
-    color: #580505;
-    height: 150px;
-}
-
-
-nav a{
-    height: 100%;
-    padding: 0 15px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color:  rgb(118, 6, 6)
-}
-nav a:hover{
-    background-color: #d36868;
-}
-nav ul li a img:hover{
-    background-color: #fff;
-}
-.logo{
-   height: 65%;
-}
-nav li:first-child{
-    margin-right: auto;
-} */
-
